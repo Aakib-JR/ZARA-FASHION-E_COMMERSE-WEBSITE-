@@ -1,0 +1,133 @@
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 590px;
+  overflow: hidden;
+  background: #555;
+  color: #fff;
+}
+
+.hero-image,
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.64) 0%,
+    rgba(0, 0, 0, 0.32) 46%,
+    rgba(0, 0, 0, 0.03) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(650px, 85%);
+  margin-left: 9%;
+  padding: 70px 0;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-eyebrow {
+  color: #eee;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(43px, 6.5vw, 78px);
+  line-height: 1.07;
+  letter-spacing: -2px;
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 390px;
+  margin: 22px 0 30px;
+  color: #eee;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 26px;
+  padding: 15px 20px;
+  border-radius: 0;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background: #dedede;
+}
+
+.hero-index {
+  position: absolute;
+  right: 5%;
+  bottom: 28px;
+  z-index: 1;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 510px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 490px;
+  }
+
+  .hero-image {
+    object-position: 58% center;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.1)
+    );
+  }
+
+  .hero-content {
+    width: 90%;
+    margin-left: 6%;
+    padding: 60px 0;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(42px, 10vw, 61px);
+  }
+
+  .hero-description {
+    max-width: 300px;
+    font-size: 12px;
+  }
+}
