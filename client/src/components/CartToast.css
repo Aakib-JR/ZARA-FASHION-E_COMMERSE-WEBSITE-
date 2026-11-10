@@ -1,0 +1,33 @@
+.cart-toast {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: calc(100vw - 48px);
+  padding: 15px 18px;
+  background: #171717;
+  color: #fff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  font-size: 12px;
+  animation: cart-toast-enter 0.25s ease-out;
+}
+
+.cart-toast span {
+  color: #b9d6a3;
+  font-size: 18px;
+}
+
+@keyframes cart-toast-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
