@@ -1,0 +1,42 @@
+.editorial-banner {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(rgba(20, 20, 20, 0.25), rgba(20, 20, 20, 0.25)),
+    url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1800&q=85')
+      center 55% / cover;
+  color: #fff;
+  text-align: center;
+}
+
+.editorial-banner-content {
+  width: min(600px, 88%);
+}
+
+.editorial-banner .eyebrow {
+  color: #fff;
+}
+
+.editorial-banner h2 {
+  margin: 8px 0 18px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 6vw, 62px);
+  font-weight: 500;
+}
+
+.editorial-banner p:not(.eyebrow) {
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.editorial-banner-link {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
